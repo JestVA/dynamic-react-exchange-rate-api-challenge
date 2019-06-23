@@ -5,7 +5,17 @@ import UserInputDate from './component/user-input-date'
 
 
 const ExchangeRateApp = () => {
-    // Let's define state: currency selection (base) & date input
+    // Let's define state: currency selection (base) & date input & the rates returned from the API poll
+    // Currency
+    const defaultCurrency = "GBP"
+    const [base, setBase] = useState(defaultCurrency)
+    // Time Factor
+    const [date, setDate] = useState()
+    // API results
+    const [rates, setRates] = useState(Object.create(null))
+    
+    
+    
     return (
         <h1>building api poll...</h1>
     )
