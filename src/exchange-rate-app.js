@@ -5,6 +5,7 @@ import UserInputDate from './component/user-input-date'
 
 
 const ExchangeRateApp = () => {
+    // Let's define state: currency selection (base) & date input
     return (
         <h1>building api poll...</h1>
     )
