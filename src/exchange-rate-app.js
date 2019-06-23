@@ -37,7 +37,12 @@ const ExchangeRateApp = () => {
 
     
     return (
-        <h1>building api poll...</h1>
+        <div>
+            <h1>building api poll...</h1>
+            <UserInputDate {...userInputDateProps} />
+            <UserInputCurrency {...userInputCurrencyProps} />
+            <ExchangeRateResults rateItems={rates} />
+        </div>
     )
 }
 
