@@ -2,12 +2,12 @@ import React from 'react'
 
 const UserInputCurrency = ({ defaultCurrency, onChange, options, size }) => {
     const displayOptions = () => {
-        return options.map(option => <option value={option}>{option}</option>)
+        return options.map(option => <option value={option} key={option}>{option}</option>)
     }
 
     return (
         <div>
-            <p>Please select a base currency to be quoted against:</p>
+            <p>And a base currency to be quoted against:</p>
             <select 
                 defaultValue={[defaultCurrency]}
                 size={size}
